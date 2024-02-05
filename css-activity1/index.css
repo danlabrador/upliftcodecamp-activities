@@ -17,7 +17,7 @@ h2, h3 {
   background-color: aqua;
 }
 
-/* Apply colors */
+/* Class styling */
 
 .background-blue {
   background-color: blue
@@ -55,7 +55,11 @@ h2, h3 {
   font-weight: bold;
 }
 
-/* Specific */
+.no-display {
+  display: none;
+}
+
+/* Specific styles */
 .color-green > li {
   color: green;
 }
