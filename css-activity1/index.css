@@ -1,0 +1,65 @@
+/* Universal */
+* {
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  background-color: blue;
+}
+
+h2, h3 {
+  color: black;
+  background-color: aqua;
+}
+
+/* Apply colors */
+
+.background-blue {
+  background-color: blue
+}
+
+.background-red {
+  background-color: red
+}
+
+.background-aqua {
+  background-color: aqua
+}
+
+.background-purple {
+  background-color: #b799ff;
+}
+
+.background-mint {
+  background-color: #7fffd4;
+}
+
+.background-white {
+  background-color: white;
+}
+
+.color-cornflower {
+  color: #aee2ff;
+}
+
+.color-black {
+  color: black;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Specific */
+.color-green > li {
+  color: green;
+}
+
+.color-cornflower > li {
+  color: #aee2ff;
+}
