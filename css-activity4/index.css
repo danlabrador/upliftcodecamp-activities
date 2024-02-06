@@ -1,0 +1,150 @@
+/* Universal */
+* {
+  color: white;
+  margin: 0;
+  box-sizing: border-box ;
+}
+
+body {
+  background-color: white;
+}
+
+main {
+  background-color: black;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+
+/* Header Section*/
+
+header {
+  border-bottom: 3px solid dimgrey;
+  text-align: center;
+  position: relative;
+}
+
+header .display-picture {
+  margin-top: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid dimgrey;
+  background-color: white;
+  display: inline-block;
+}
+
+header .contact-info {
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  margin-left: 10px;
+}
+
+header .contact-info h1 {
+  text-align: left;
+}
+
+header .contact-info p {
+  text-align: left ;
+  color: dimgrey;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+/* Conversation Section */
+
+.conversation-container {
+  padding: 20px 0;
+}
+
+.message {
+  border-radius: 10px;
+}
+
+.message-container.user {
+  text-align: left;
+}
+
+.message-container.contact + .message-container.contact {
+  margin-top: 5px;
+}
+
+.message.contact {
+  background-color: dimgrey;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 10px 0 70px;
+  position: relative;
+  display: inline-block;
+  max-width: 75%;
+}
+
+.message.contact::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -50px;
+  top: 0px;
+  border-radius: 50%;
+  background-image: url('stevie.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 1px solid dimgrey;
+}
+
+.message.contact.trailing::before {
+  display: none;
+}
+
+/* In between contact and user messages */
+.message-container.contact + .message-container.user,
+.message-container.user + .message-container.contact,
+.message-container.contact + .time,
+.message-container.user + .time {
+  margin-top: 20px;
+}
+
+.time {
+  margin-bottom: 5px;
+}
+
+.time p {
+  text-align: center;
+}
+
+/* User's message */
+
+.message-container.user {
+  text-align: right;
+}
+
+.message-container.user + .message-container.user {
+  margin-top: 5px;
+}
+
+.message.user {
+  background-color: deepskyblue;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 20px;
+  position: relative;
+  max-width: 75%;
+  display: inline-block;
+}
+
+/* Chat Box Section */
+
+.chat-box-container {
+  text-align: center;
+}
+
+.chat-box {
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+  background-color: dimgrey;
+  border: 1px solid white;
+}
