@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  width: 200px;
+  height: 250px;
+  text-align: center;
+  float: left;
+}
+
+.card h2 {
+  font-size: 2em;
+  margin: 2em 0;
+}
