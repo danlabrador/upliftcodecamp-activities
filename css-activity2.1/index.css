@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
+/* Containers */
+.container {
+  position: relative;
+  display: inline-block;
+  margin: 0 7em;
+  padding: 0;
+  width: 300px;
+  height: 500px;
+}
+
+
+/* Boxes */
+.box {
+  width: 300px;
+  height: 300px;
+  margin: 0;
+}
+
+.red {
+  background-color: #fd0015;
+  display: block;
+}
+
+.green {
+  background-color: #0f7e1a;
+  display: block;
+}
+
+.blue {
+  background-color: #0326f8;
+  display: block;
+}
+
+/* Individual Boxes */
+.container-1 .red {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container-1 .green {
+  position: absolute;
+  top: 3em;
+  left: 3em;
+}
+
+.container-1 .blue {
+  position: absolute;
+  top: 6em;
+  left: 6em;
+}
+
+.container-2 .red {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.container-2 .green {
+  position: absolute;
+  top: 3em;
+  left: 3em;
+  z-index: 3;
+  background-color: #0f7e1add;
+}
+
+.container-2 .blue {
+  position: absolute;
+  top: 6em;
+  left: 6em;
+  z-index: 2;
+}
+
+.container-3 .red {
+  position: absolute;
+  top: 6em;
+  left: 0;
+  z-index: 2;
+}
+
+.container-3 .green {
+  position: absolute;
+  top: 3em;
+  left: 3em;
+  z-index: 1;
+}
+
+.container-3 .blue {
+  position: absolute;
+  top: 0;
+  left: 6em;
+  z-index: 3;
+}
