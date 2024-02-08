@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: white;
+  background-color: #333;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f0f0f0;
+  height: 85vh;
+}
+
+.flex-item {
+  padding: 2em;
+  font-size: 1.25em;
+  background-color: #007acc;
+  border: 3.5px solid #005b91;
+  border-radius: 7.5px;
+  color: white;
+}
