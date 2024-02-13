@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+}
+
+h1 {
+  padding: 1rem;
+  text-align: center  ;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+section {
+  padding: .5rem;
+  width: 50%;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: .5rem;
+}
+
+@media screen and (min-width: 768px){  
+  h2 {
+    color: red;
+  }
+
+  main {
+    flex-flow: row wrap;
+  }
+}
