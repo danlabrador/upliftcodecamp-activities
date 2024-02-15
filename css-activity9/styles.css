@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/** ☝️ Let's remove any spacing */
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: row dense;
+}
+
+.item {
+  border: 5px solid rgb(0, 44, 107);
+  background-color: rgb(1, 165, 146);
+  padding: 10px;
+  color: white;
+  font-size: 4rem;
+  /** You can customize each item */
+}
+
+.item-1 {
+  grid-column: 1 / span 3;
+}
+
+.item-2 {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.item-3 {
+  grid-column: 2 / span 2;
+}
+
+.item-4 {
+  grid-column: 2 / span 2;
+}
